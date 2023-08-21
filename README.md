@@ -60,8 +60,11 @@ https://smith.langchain.com/public/24456a63-4af0-48b6-9e1a-edd2dd0087f4/r
 
 [The resulting PR](https://github.com/hwchase17/langchainjs/pull/2341) from running this script on the repo encompassed 280 files!
 
-Some changes were required after the initial pass as roughly 10 generated `@returns` annotations resulted in TSDoc comments incompatible with
-our automatically generated Docusaurus API reference docs, but overall quality seemed high. Here are some of the few I was impressed by:
+Some changes were required after the initial pass. Roughly 10 of the generated `@returns` annotations resulted in TSDoc comments incompatible with
+our automatically generated Docusaurus API reference docs. Also, a few of the docs for very technical, algorithm-heavy features
+(generative agents, parent document retriever) were vague, but overall quality seemed high.
+
+Here are a few I was most impressed by:
 
 A good explanation with parameters of the convenience method to create an OpenAI Functions-powered extraction chain:
 
@@ -172,6 +175,12 @@ Running this repo over all the code in LangChain.js took millions of tokens.
 
 During development, I added some filtering steps to try to only perform the LLM-powered steps on non-test TypeScript files that
 have at least one uncommented declaration that would be a good candidate for a TSDoc comment.
+
+### Document ingestion/splitting
+
+To get started quickly, I reused an existing vector store optimized for [ChatLangChain](https://github.com/langchain-ai/chat-langchain).
+Experimenting and optimizing the ingestion and splitting steps (and ingesting the JS specific docs rather than the Python ones!)
+would almost certainly improve performance.
 
 # 🙏 Thank you!
 
