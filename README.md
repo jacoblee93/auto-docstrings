@@ -1,7 +1,7 @@
 # ✨ LangChain.js Auto TSDoc Comment Creator
 
-This repo uses LangChain.js to automatically generate annotated TSDoc comments for declared methods, classes, interfaces, types, and functions
-for the LangChain.js repo.
+This repo uses [LangChain.js](https://js.langchain.com/) to automatically generate annotated TSDoc
+comments for declared methods, classes, interfaces, types, and functions in the [LangChain.js repo](https://github.com/hwchase17/langchainjs).
 
 ![Sample TSDoc comment shown in Intellisense in VSCode](/public/images/intellisense_tooltip.png)
 
