@@ -33,6 +33,24 @@ results in a good state.
 
 All steps use OpenAI's GPT-4.
 
+The actual implementation requires a few RunnableMaps to pass information through properly. Here's a basic idea of what it looks like:
+
+```typescript
+const chain = RunnableSequence.from([
+  {
+    original_input: new RunnablePassthrough(),
+    retrievalResult: researchAgentExecutor,
+  },
+  {
+    input: ({ original_input }) => original_input.input,
+    context: ({ retrievalResult }) => retrievalResult.output,
+  },
+  prompt,
+  functionCallingModel,
+  new JsonOutputFunctionsParser(),
+]);
+```
+
 Here's a link to an example LangSmith trace demonstrating this sequence:
 
 https://smith.langchain.com/public/24456a63-4af0-48b6-9e1a-edd2dd0087f4/r
