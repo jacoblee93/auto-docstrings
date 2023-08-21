@@ -33,7 +33,8 @@ results in a good state.
 
 All steps use OpenAI's GPT-4.
 
-The actual implementation requires a few RunnableMaps to pass information through properly. Here's a basic idea of what it looks like:
+The actual implementation requires a few [RunnableMaps](https://js.langchain.com/docs/guides/expression_language/cookbook) to pass
+information through properly. Here's a basic idea of what it looks like:
 
 ```typescript
 const chain = RunnableSequence.from([
