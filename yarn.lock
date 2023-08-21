@@ -408,6 +408,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"auto-docstrings@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "auto-docstrings@workspace:."
+  dependencies:
+    "@tsconfig/recommended": ^1.0.2
+    dotenv: ^16.3.1
+    graphql: ^16.8.0
+    langchain: ^0.0.131
+    prettier: ^3.0.2
+    tsx: ^3.12.7
+    typescript: ^5.1.6
+    weaviate-ts-client: ^1.4.0
+    zod: ^3.22.2
+    zod-to-json-schema: ^3.21.4
+  languageName: unknown
+  linkType: soft
+
 "axios@npm:^0.26.0":
   version: 0.26.1
   resolution: "axios@npm:0.26.1"
@@ -650,22 +667,6 @@ __metadata:
   checksum: 8ebdb4b9ef02b1ac0da532d25c7d08388f2552813dfadabfe7c4630e944bb4a48093b997fc926440a10e1ccf4912f2ce9adcf2d6687b0518dab8480e08f22f9d
   languageName: node
   linkType: hard
-
-"docstrings@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "docstrings@workspace:."
-  dependencies:
-    "@tsconfig/recommended": ^1.0.2
-    dotenv: ^16.3.1
-    graphql: ^16.8.0
-    langchain: ^0.0.131
-    tsx: ^3.12.7
-    typescript: ^5.1.6
-    weaviate-ts-client: ^1.4.0
-    zod: ^3.22.2
-    zod-to-json-schema: ^3.21.4
-  languageName: unknown
-  linkType: soft
 
 "dotenv@npm:^16.3.1":
   version: 16.3.1
@@ -1884,6 +1885,15 @@ __metadata:
     lru-cache: ^9.1.1 || ^10.0.0
     minipass: ^5.0.0 || ^6.0.2 || ^7.0.0
   checksum: e2557cff3a8fb8bc07afdd6ab163a92587884f9969b05bbbaf6fe7379348bfb09af9ed292af12ed32398b15fb443e81692047b786d1eeb6d898a51eb17ed7d90
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "prettier@npm:3.0.2"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: 118b59ddb6c80abe2315ab6d0f4dd1b253be5cfdb20622fa5b65bb1573dcd362e6dd3dcf2711dd3ebfe64aecf7bdc75de8a69dc2422dcd35bdde7610586b677a
   languageName: node
   linkType: hard
 
