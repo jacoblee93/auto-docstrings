@@ -5,7 +5,7 @@ comments for declared methods, classes, interfaces, types, and functions in the 
 
 ![Sample TSDoc comment shown in Intellisense in VSCode](/public/images/intellisense_tooltip.png)
 
-![An extremely funny and creative meme](/public/images/langchain-create-meme.png)
+![An extremely funny and creative meme](/public/images/langchain-create-meme.jpeg)
 
 TSDoc comments are invaluable in helping developers understand code at the interface level, giving insight into
 intricacies, parameters, and return types without needing to check the actual implementation. The comments show
