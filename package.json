@@ -4,13 +4,15 @@
   "packageManager": "yarn@3.5.1",
   "type": "module",
   "scripts": {
-    "start": "tsx -r dotenv/config ./src/index.ts",
+    "start": "tsx -r dotenv/config ./src/generate_tsdoc_comments.ts",
     "format": "prettier --write \"src\""
   },
   "dependencies": {
     "dotenv": "^16.3.1",
+    "faiss-node": "^0.5.1",
     "graphql": "^16.8.0",
-    "langchain": "^0.0.131",
+    "ignore": "^5.2.4",
+    "langchain": "^0.0.180",
     "typescript": "^5.1.6",
     "weaviate-ts-client": "^1.4.0",
     "zod": "^3.22.2",
